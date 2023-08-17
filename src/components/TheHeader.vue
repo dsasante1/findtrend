@@ -41,26 +41,27 @@ Findtrend  let you gathers all of your favorite website into one place.
              <span id="socialMediaText">Cryptopunk - Search</span>
              <img alt="closeIcon"  src="@/assets/Group 1.svg"/>
         </span>
-
-        <span id="cardTwitter">
-             <img alt="cardTwitter"  src="@/assets/image 96.png"/>
-             <span id="socialMediaText">Cryptopunk - Search</span>
-             <img alt="closeIcon"  src="@/assets/Group 1.svg"/>
-        </span>
-
-
-        <span id="cardTwitter">
-             <img alt="cardTwitter"  src="@/assets/image 96.png"/>
-             <span id="socialMediaText">Cryptopunk - Search</span>
-             <img alt="closeIcon"  src="@/assets/Group 1.svg"/>
-        </span>
-
-        <span id="cardTwitter">
-             <img alt="cardTwitter"  src="@/assets/image 96.png"/>
-             <span id="socialMediaText">Cryptopunk - Search</span>
+        <span id="cardFb">
+             <img alt="cardFb"  src="@/assets/image 95.png"/>
+             <span id="socialMediaText">Product Design - Search</span>
              <img alt="closeIcon"  src="@/assets/Group 1.svg"/>
         </span>
         
+
+        <span id="cardPininterest">
+             <img alt="cardPininterest"  src="@/assets/image 96(1).png"/>
+             <span id="socialMediaText">Popular Design - Search</span>
+             <img alt="closeIcon"  src="@/assets/Group 1.svg"/>
+        </span>
+
+
+        <span id="cardDribble">
+             <img alt="cardDribble"  src="@/assets/Rectangle 6.svg"/>
+             <span id="socialMediaText">Elon Musk - Search</span>
+             <img alt="closeIcon"  src="@/assets/Group 1.svg"/>
+        </span>
+
+
     </div>
 </div>
    
@@ -171,6 +172,16 @@ Findtrend  let you gathers all of your favorite website into one place.
 
 #socialMedia{
     padding: 50px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+
+#socialMediaText{
+    color: white;
 }
 
 
@@ -187,9 +198,46 @@ Findtrend  let you gathers all of your favorite website into one place.
     /* padding: 20px; */
 }
 
-#socialMediaText{
-    color: white;
+
+#cardFb{
+    background-color: #181818;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    display: flex;
+    gap: 20px;
+    rotate: 15deg;
+    /* padding: 20px; */
 }
 
+
+#cardPininterest{
+    background-color: #181818;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 302px;
+    display: flex;
+    gap: 20px;
+    rotate: -5deg;
+    /* padding: 20px; */
+}
+
+
+#cardDribble{
+    background-color: #181818;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    display: flex;
+    gap: 20px;
+    rotate: 15deg;
+    /* padding: 20px; */
+}
 </style>
     
