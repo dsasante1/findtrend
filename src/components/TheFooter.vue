@@ -5,14 +5,21 @@
         <p id="joinUs">Join us on email for</p>
         <p id="trendingTopics">more trending topics</p>
         <div  id="joinNow"><span>Join Now</span></div>
-        <div class="footerUrls">
-            
-        <img alt="checkMark" id="checkMark" src="@/assets/Frame 29.svg"/>             
-        <span>Findtrend</span>
-
-        </div>
-
     </div>
+    <div class="footerUrls">
+            <span>
+                <img alt="blackLogo" id="blackLogo" src="@/assets/Vector.svg"/>             
+                <span>Findtrend</span>
+            </span>
+            <span id="footerNavUrls">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Careers</a>
+
+            </span>
+    
+            </div>
 </template>
 
 
@@ -74,6 +81,18 @@
 }
 
 .footerUrls{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#footerNavUrls{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
 
 }
 
