@@ -98,7 +98,7 @@
 
 
 
-    <!-- <div id="desktopView">
+    <div id="desktopView">
         <div class="midSection">
             <p id="newTab">Open new tabs is sh*t </p>
             <div id="centerContent">
@@ -182,7 +182,10 @@
         
     </div>
 
-    </div> -->
+    </div>
+
+
+    
 </template>
 
 
@@ -392,7 +395,7 @@
 }
 
 
-/* @media only screen and (min-width: 900px){
+@media only screen and (min-width: 900px){
 
 .mobileView{
     display: none;
@@ -540,7 +543,7 @@
 
 }
 
-} */
+}
 
 </style>
     
