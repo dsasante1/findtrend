@@ -233,13 +233,13 @@
     gap: 30px;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 50px;
   }
 
 
 
 #cardOne{
-    width: 300px;
+    width: 320px;
     height: 650px;
     background-color: white ;
     border-radius: 5px;
@@ -248,7 +248,7 @@
 }
 
 #cardTwo{
-    width: 300px;
+    width: 320px;
     height: 650px;
     background-color: yellowgreen;
     border-radius: 5px;
@@ -256,7 +256,7 @@
 }
 
 #cardThree{
-    width: 300px;
+    width: 320px;
     height: 650px;
     background-color: white ;
     border-radius: 5px;
