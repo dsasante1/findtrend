@@ -22,7 +22,7 @@
                 <br>
                 <hr>
                 <br>
-                <span>$8</span>><span>/Month</span>
+                <span id="cost">$8</span><span>/Month</span>
                 <div>
                     <div>
                         <img alt="checkMark" id="checkMark" src="@/assets/Frame 29.svg"/>
@@ -41,22 +41,28 @@
 
                 </div>
                 
-                <div id="freeTrialPosition">
+                <div id="freeTrialPositionOne">
                     <span id="freeTrial">Start Free Trial</span>
                 </div>
                 
             </span>
 
             <span id="cardTwo">
-                <h1>Personal</h1>
-                <h3>Special first packet for all</h3>
+                <h1>Regular</h1>
+                <h3>Recommended for personal pro</h3>
                 <br>
                 <hr>
                 <br>
-                <span>$8</span>><span>/Month</span>
+                <span id="cost">$20</span><span>/Month</span>
                 <div>
+                    <div>
                         <img alt="checkMark" id="checkMark" src="@/assets/Frame 29.svg"/>
-                        <span>Up to 5 page each group</span>
+                        <span>Up to 15 page each group</span>
+                    </div>
+
+                    <div>
+                        <img alt="checkMark" id="checkMark" src="@/assets/Frame 29.svg"/>
+                        <span>Download page up to 20 page</span>
                     </div>
 
                     <div>
@@ -66,31 +72,57 @@
 
                     <div>
                         <img alt="checkMark" id="checkMark" src="@/assets/Frame 29.svg"/>
-                        <span>5 Days group page saved</span>
+                        <span>15 Days group page saved</span>
                     </div>
+
+                </div>
+                
+                <div id="freeTrialPositionTwo">
+                    <span id="freeTrialTwo">Start Free Trial</span>
+                </div>
             </span>
             
             <span id="cardThree">
-                <h1>Personal</h1>
-                <h3>Special first packet for all</h3>
+                <h1>Premium</h1>
+                <h3>Packet for Startup & Company</h3>
                 <br>
                 <hr>
                 <br>
-                <span>$8</span>><span>/Month</span>
+                <span id="cost">$48</span><span>/Month</span>
                 <div>
+                    <div>
                         <img alt="checkMark" id="checkMark" src="@/assets/Frame 29.svg"/>
-                        <span>Up to 5 page each group</span>
+                        <span>Unlimited group pages</span>
                     </div>
 
                     <div>
                         <img alt="checkMark" id="checkMark" src="@/assets/Frame 29.svg"/>
-                        <span>Up to 10 group page</span>
+                        <span>Unlimited download page</span>
                     </div>
 
                     <div>
                         <img alt="checkMark" id="checkMark" src="@/assets/Frame 29.svg"/>
-                        <span>5 Days group page saved</span>
+                        <span>Unlimited page each group</span>
                     </div>
+
+                    <div>
+                        <img alt="checkMark" id="checkMark" src="@/assets/Frame 29.svg"/>
+                        <span>Custormized sorting group pages</span>
+                    </div>
+                    <div>
+                        <img alt="checkMark" id="checkMark" src="@/assets/Frame 29.svg"/>
+                        <span>Custormized group page name</span>
+                    </div>
+                    <div>
+                        <img alt="checkMark" id="checkMark" src="@/assets/Frame 29.svg"/>
+                        <span>30 Days group page saved</span>
+                    </div>
+
+                </div>
+                
+                <div id="freeTrialPositionThree">
+                    <span id="freeTrial">Start Free Trial</span>
+                </div>
             </span>
         </div>
     </div>
@@ -198,41 +230,75 @@
   #optionCard{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
   }
 
 
 
 #cardOne{
     width: 300px;
-    height: 400px;
+    height: 650px;
     background-color: white ;
     border-radius: 5px;
+    padding: 20px;
 
 }
 
 #cardTwo{
     width: 300px;
-    height: 400px;
-    background-color: white ;
+    height: 650px;
+    background-color: yellowgreen;
     border-radius: 5px;
+    padding: 20px;
 }
 
 #cardThree{
-  width: 300px;
-    height: 400px;
+    width: 300px;
+    height: 650px;
     background-color: white ;
     border-radius: 5px;
+    padding: 20px;
 }
 
 
-#freeTrialPosition{
-    padding-top: 130px;
+#freeTrialPositionOne{
+    padding-top: 230px;
     padding-right: 20px;
     padding-left: 20px;
 }
 
+
+#freeTrialPositionTwo{
+    padding-top: 170px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+
+#freeTrialPositionThree{
+    padding-top: 100px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+
 #freeTrial{
+    background-color: yellowgreen;
+    color: black;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left : 40px;
+    padding-right: 40px;
+    font-size: large;
+
+}
+
+#freeTrialTwo{
     background-color: black;
     color: white;
     border-radius: 50px;
@@ -241,6 +307,11 @@
     padding-right: 40px;
     font-size: large;
 
+}
+
+#cost{
+    font-size: 70px;
+    font-weight: bolder;
 }
 
 </style>
