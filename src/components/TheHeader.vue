@@ -145,6 +145,9 @@ Findtrend  let you gathers all of your favorite website into one place.
 #navSection{
     padding: 20px;
     background-color: black;
+    background-image: url('@/assets/Ornament.svg');
+    /* background-repeat: no-repeat; */
+
 
 }
 
