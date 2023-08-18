@@ -81,7 +81,7 @@
 }
 
 .footerUrls{
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -92,8 +92,14 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
+ 
 
 
+}
+
+#footerNavUrls a{
+    text-decoration : none;
+    color: black;
 }
 
 </style>

@@ -1,6 +1,7 @@
 
 <script setup></script>
 <template>
+    <div class="desktop">
     <div class="nav">
     <div class="navItems">
     <span>
@@ -8,11 +9,11 @@
         <span class="logoText">Findtrend</span>
     </span>
     <span class="navLinks">
-        <span>About</span>
-        <span>How it works</span>
-        <span>Pricing</span>
-        <span>Solution</span>
-        <span>Features</span>
+        <a href="#">About</a>
+        <a href="#">How it works</a>
+        <a href="#">Pricing</a>
+        <a href="#">Solution</a>
+        <a href="#">Features</a>
     </span>
     <span>
         <span id="login">Login</span>
@@ -64,6 +65,11 @@ Findtrend  let you gathers all of your favorite website into one place.
 
     </div>
 </div>
+
+</div>
+
+
+
    
 </template>
 
@@ -97,13 +103,24 @@ Findtrend  let you gathers all of your favorite website into one place.
 }
 
 .navLinks{
-    color: white;
+   
     display: flex;
     justify-content: space-evenly;
     gap: 40px;
+    
 
 
 }
+
+
+.navLinks a{
+    color: white;
+    text-decoration : none;
+
+}
+
+
+
 #login{
     color: white;
     padding-right: 40px;
@@ -238,6 +255,11 @@ Findtrend  let you gathers all of your favorite website into one place.
     gap: 20px;
     rotate: 15deg;
     /* padding: 20px; */
+}
+
+
+@media only screen and (max-width: 600px){
+
 }
 </style>
     
