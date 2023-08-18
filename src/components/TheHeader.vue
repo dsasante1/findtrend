@@ -1,7 +1,33 @@
 
 <script setup></script>
 <template>
-    <div class="desktop">
+
+    <div class="mobileView">
+        <div id="navSection">
+            <div id="mobileNav">
+            
+            <img alt="mobileGreenLogo" id="mobileGreenLogo" src="@/assets/green_logo.svg"/>
+            <img alt="menu" id="menu" src="@/assets/twostrips.svg"/>  
+
+            </div>
+            <p id="navTitle">Minimize your tabs.</p>
+            <p id="navTitle">Find the trends!</p>
+            <p id="navSubTitle">
+                Don’t let your computer 
+                memories consumes
+                 all of those browser tabs. 
+                Findtrend  let you gathers all of 
+                your favorite website into one place.
+            </p>
+            <span id="getStarted">
+                <img alt="get-started" id="getStartedImage" src="@/assets/Get Started 🔥.svg"/>
+            </span>
+        </div>
+    </div>
+
+
+
+    <div class="desktopView">
     <div class="nav">
     <div class="navItems">
     <span>
@@ -76,6 +102,67 @@ Findtrend  let you gathers all of your favorite website into one place.
 
 
 <style scoped>
+
+
+
+@media only screen and (max-width: 900px){
+.desktopView{
+    display: None;
+}
+
+#navSection{
+    padding: 20px;
+    background-color: black;
+
+}
+
+#mobileNav{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 70px;
+
+}
+
+#menu{
+    width: 40px;
+}
+
+#navTitle{
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+#navSubTitle{
+    color: white;
+    padding: 40px;
+    opacity: 0.6;
+
+}
+
+#getStarted{
+    background-color: greenyellow;
+    padding: 10px;
+    border-radius: 50px;
+ 
+
+}
+
+
+
+}
+
+
+
+@media only screen and (min-width: 900px){
+
+
+.mobileView{
+    display: none;
+}
 
 .nav{
     background-color: black;
@@ -256,10 +343,8 @@ Findtrend  let you gathers all of your favorite website into one place.
     rotate: 15deg;
     /* padding: 20px; */
 }
-
-
-@media only screen and (max-width: 600px){
-
 }
+
+
 </style>
     
