@@ -1,6 +1,8 @@
 
 <script setup></script>
 <template>
+
+<div id="desktopView">
     <div class="midSection">
         <p id="newTab">Open new tabs is sh*t </p>
         <div id="centerContent">
@@ -83,10 +85,19 @@
         </div>
         
     </div>
+</div>
+   
 </template>
 
 
 <style scoped>
+
+
+@media only screen and (max-width: 900px){}
+
+
+@media only screen and (min-width: 900px){
+
 .midSection{
     background-color: greenyellow;
     padding: 30px;
@@ -227,6 +238,10 @@
     padding-left : 40px;
     padding-right: 40px;
     font-size: large;
+
+}
+
+
 
 }
 
