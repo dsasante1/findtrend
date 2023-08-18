@@ -3,32 +3,31 @@
 <template>
 
 
+
 <div id="mobileView">
-    <div class="midSection">
-        <p id="newTab">Open new tabs is sh*t </p>
-        
-        
-        <img alt="you just need one tab" id="oneTab" src="@/assets/You just need one tab now.svg"/>
-        <img alt="arrow" id="topArrow" src="@/assets/Arrow 41.svg"/>
-
-
-        <div id="centerContent">
+    <div id="desktop">
+        <div class="midSection">
+            <p id="newTab">Open new tabs is sh*t </p>
+            <img alt="you just need one tab"  id="tabNow" src="@/assets/You just need one tab now.svg"/>
+            
+            <img alt="arrow" id="topArrow"  src="@/assets/Arrow 41.svg"/>
+          
+            <div id="centerContent">
 
                 <span id="whiteBackgroud">
                     <span id="blackBackground">
-                        <img alt="midLogo"  src="@/assets/green_logo.svg"/>
+                        <img alt="midLogo" id="midLogo" src="@/assets/green_logo.svg"/>
                         <span>Findtrend - Elon Musk</span>
-                        <img alt="closeIcon"  src="@/assets/Group 1.svg"/>
+                        <img alt="closeIcon" id="closeIconImage" src="@/assets/Group 1.svg"/>
                     </span>
 
                 </span>
             
         </div>
 
-        
-        
-        <img alt="arrow" id="topArrow" src="@/assets/Arrow 61.svg"/>
-        <img alt="discover trend" id="discoverTrends" src="@/assets/solution for discover a trend.svg"/>       
+        <img alt="arrow" id="bottomArrow" src="@/assets/Arrow 61.svg"/>
+        <img alt="discover trend"  id="discoverTrend" src="@/assets/solution for discover a trend.svg"/>
+            
         <p id="subText">
         A solution for your browser tabs and don’t make your device get slower over time. Get ease and faster to discover a trend with just one tab.
         </p>
@@ -38,11 +37,10 @@
     </div>
     
     <div class="companies">
-        
         <p id="promotionText">
             Findtrend helps you to increase your productivity and reduce your
-             computer's memory load, an application that can fulfill your daily
-              browsing needs.
+             computer's memory load, <span id="greyText">an application that can fulfill your daily
+              browsing needs.</span>
         </p>
         <p id="promotionText">
             Findtrend make +1000 Startup grow
@@ -72,14 +70,12 @@
             All platform connect to Findtrend
         </p>
         <div id="socialMediaLinks">
-            <img alt="fb" src="@/assets/image 105.svg"/>
+            <img alt="fb" src="@/assets/image 95.png"/>
             <img alt="twitter"  src="@/assets/image 96.svg"/>  
             <img alt="work"  src="@/assets/Rectangle 6.svg"/>
             <img alt="volvo"  src="@/assets/image 111.svg"/>
             <img alt="grab" src="@/assets/image 113.svg"/>
-            <img alt="verizon" src="@/assets/image 114.svg"/>
-            <img alt="coinbase" src="@/assets/image 115.svg"/>
-            <img alt="expedia" src="@/assets/image 112.svg"/>
+            
            
         </div>
         <div id="twitterImages">
@@ -95,12 +91,17 @@
         
     </div>
 
+    </div>
 </div>
 
-<div id="desktopView">
-    <div class="midSection">
-        <p id="newTab">Open new tabs is sh*t </p>
-        <div id="centerContent">
+
+
+
+
+    <!-- <div id="desktopView">
+        <div class="midSection">
+            <p id="newTab">Open new tabs is sh*t </p>
+            <div id="centerContent">
             <img alt="discover trend" src="@/assets/solution for discover a trend.svg"/>
            
             <img alt="arrow" src="@/assets/Arrow 6.svg"/>
@@ -180,29 +181,32 @@
         </div>
         
     </div>
-</div>
-   
+
+    </div> -->
 </template>
 
 
 <style scoped>
 
-
 @media only screen and (max-width: 900px){
-    .midSection{
+.desktopView{
+    display: None;
+}
+
+.midSection{
     background-color: greenyellow;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
 
 }
 
 #newTab{
     font-size: 30px;
     font-weight: bolder;
-    padding-top: 30px;
+    padding-top: 20px;
     text-align: center;
 
 }
@@ -213,40 +217,8 @@
   justify-content: center;
 }
 
-#discoverTrends{
-    width: 130px;
-    position: relative;
-    left: 190px;
-    top: 80px;
-}
-
-
-#topArrow{
-    width: 70px;
-    position: relative;
-    left: 200px;
-    top: 60px;
-}
-
-#downArrow{
-    width: 50px;
-    position: relative;
-    left:280px;
-    top: 90px;
-}
-
-#oneTab{
-    width: 130px;
-    position: relative;
-    left: 70px;
-}
-
-
 #whiteBackgroud{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 30px;
     background-color: white;
     border-radius: 5px;
     
@@ -256,25 +228,69 @@
 #blackBackground{
     background-color: black;
     color: white;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 10px;
+    justify-content: space-between;
 
 
 
 }
 
-/* #blackBackground span {
 
-} */
+#midLogo{
+    width: 30px;
+}
+
+
+
+#blackBackground span{
+    width: 200px;
+    
+}
+
+
+#closeIconImage{
+    width: 20px;
+}
+
+
+#topArrow{
+    width: 60px;
+    position: relative;
+    left: 220px;
+    top: 40px;
+}
+
+
+#bottomArrow{
+    width: 60px;
+    position: relative;
+    left: 30px;
+    bottom: 30px
+}
+
+
+#discoverTrend{
+    width: 140px;
+    position: relative;
+    right: 20px;
+    bottom: 40px;
+}
+
+#tabNow{
+    width: 140px;
+    position:relative;
+    left: 230px;
+    top: 70px;
+}
 
 #subText{
     font-size: large;
-    padding: 50px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right:10px;
     text-align: center;
     
 }
@@ -285,11 +301,102 @@
     padding: 50px;
 }
 
+#promotionText{
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
 
-@media only screen and (min-width: 900px){
+#greyText{
+    color: grey;
+}
 
+
+#tile{
+    color: #000000;
+    width: 400px;
+    height:auto;
+}
+
+#companyGrid{
+    display: grid;
+    grid-template-columns: 190px 190px;
+    grid-template-rows: 80px 80px 80px 80px;
+    grid-gap:5px;
+    align-items: center;
+  justify-content: center;
+}
+
+#companyGrid img{
+    width: 150px;
+    background-color: #f1f0f0;
+    border-radius: 8px;
+    padding: 20px;
+ 
+}
+
+#socialMediaLinks{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#socialMediaLinks img{
+    width: 45px;
+    height: auto;
+    background-color: #f1f0f0;
+    border-radius: 8px;
+    background-size: 50px;
+
+
+}
+
+#twitterImages img{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+#moreTrendButton{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#moreTrends{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left : 40px;
+    padding-right: 40px;
+    font-size: large;
+
+}
+
+
+}
+
+
+/* @media only screen and (min-width: 900px){
+
+.mobileView{
+    display: none;
+}
 .midSection{
     background-color: greenyellow;
     padding: 30px;
@@ -398,7 +505,7 @@
     background-color: #f1f0f0;
     border-radius: 8px;
     background-size: 50px;
-    /* padding: 40px; */
+   
 
 
 }
@@ -433,9 +540,7 @@
 
 }
 
-
-
-}
+} */
 
 </style>
     
