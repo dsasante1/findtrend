@@ -147,6 +147,9 @@ Findtrend  let you gathers all of your favorite website into one place.
     background-color: greenyellow;
     padding: 10px;
     border-radius: 50px;
+    position: relative;
+    left: 100px;
+
  
 
 }
