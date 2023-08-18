@@ -5,7 +5,6 @@
 
 
 <div id="mobileView">
-    <div id="desktop">
         <div class="midSection">
             <p id="newTab">Open new tabs is sh*t </p>
             <img alt="you just need one tab"  id="tabNow" src="@/assets/You just need one tab now.svg"/>
@@ -89,8 +88,6 @@
 
         </div>
         
-    </div>
-
     </div>
 </div>
 
@@ -185,14 +182,15 @@
     </div>
 
 
-    
+
 </template>
 
 
 <style scoped>
 
 @media only screen and (max-width: 900px){
-.desktopView{
+
+#desktopView{
     display: None;
 }
 
@@ -397,7 +395,7 @@
 
 @media only screen and (min-width: 900px){
 
-.mobileView{
+#mobileView{
     display: none;
 }
 .midSection{
