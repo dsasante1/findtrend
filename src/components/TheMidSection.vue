@@ -166,14 +166,12 @@
             <img alt="expedia" src="@/assets/image 112.svg"/>
            
         </div>
-        <div id="twitterImages">
-            <img alt="twitter1" src="@/assets/tweet 1.svg"/>
-            <img alt="twitter2" src="@/assets/tweet 2.svg"/>
-            <img alt="twitter3" src="@/assets/tweet 3.svg"/>
+        <div id="moreTrends">
+            <img alt="twitter1" id="twitterImages" src="@/assets/tweet 1.svg"/>
+            <img alt="twitter2" id="twitterImages" src="@/assets/tweet 2.svg"/>
+            <img alt="twitter3" id="twitterImages" src="@/assets/tweet 3.svg"/>
             
-        </div>
-        <div id="moreTrendButton">
-            <span id="moreTrends">View More Trend</span>
+            <span id="moreTrendsButton">View More Trend</span>
 
         </div>
         
@@ -511,33 +509,32 @@
 
 }
 
-#twitterImages img{
+#twitterImages{
     width: 100%;
     height: auto;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+
 
 }
-
-
-#moreTrendButton{
-    padding-left: 450px;
-    padding-right: 400px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 
 #moreTrends{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+#moreTrendsButton{
     background-color: black;
     color: white;
     border-radius: 50px;
     padding: 10px;
     padding-left : 40px;
     padding-right: 40px;
-    font-size: large;
+    font-size: medium;
 
 }
 
