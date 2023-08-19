@@ -9,10 +9,13 @@
 
 
         <div class="footerUrls">
-            <span>
+
+            <span  id="logoImageText">
                 <img alt="blackLogo" id="blackLogo" src="@/assets/Vector.svg"/>             
                 <span>Findtrend</span>
             </span>
+
+
             <span id="footerNavUrls">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms and Conditions</a>
@@ -94,6 +97,14 @@
 }
 
 
+#logoImageText{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+
 #footerNavUrls{
     display: flex;
     flex-direction: row;
@@ -121,6 +132,11 @@
     align-items: center;
 }
 
+#logoImageText{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 #footerNavUrls{
     display: flex;

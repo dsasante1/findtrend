@@ -62,7 +62,7 @@
     <div class="desktopView">
     <div class="nav">
     <div class="navItems">
-    <span>
+    <span id="logoImageText">
         <img alt="findtrend logo" class="greenLogo" src="@/assets/green_logo.svg"/>
         <span class="logoText">Findtrend</span>
     </span>
@@ -294,6 +294,11 @@ Findtrend  let you gathers all of your favorite website into one place.
 
 }
 
+#logoImageText{
+    display: flex;
+    align-items: center;
+}
+
 .navItems{
     display: flex;
     flex-direction: row;
@@ -398,7 +403,8 @@ Findtrend  let you gathers all of your favorite website into one place.
 
 
 #socialMedia{
-    padding: 50px;
+    padding-top: 170px;
+    padding-bottom: 70px;
     display: flex;
     flex-direction: row;
     
@@ -419,6 +425,7 @@ Findtrend  let you gathers all of your favorite website into one place.
     padding-top: 10px;
     padding-bottom: 10px;
     width: 300px;
+    height: 50px;
     display: flex;
     gap: 20px;
     rotate: -5deg;
@@ -433,8 +440,9 @@ Findtrend  let you gathers all of your favorite website into one place.
     padding-top: 10px;
     padding-bottom: 10px;
     width: 300px;
+    height: 50px;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     rotate: 15deg;
     /* padding: 20px; */
 }
@@ -442,13 +450,14 @@ Findtrend  let you gathers all of your favorite website into one place.
 
 #cardPininterest{
     background-color: #181818;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 302px;
+    height: 50px;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     rotate: -5deg;
     /* padding: 20px; */
 }
@@ -461,6 +470,7 @@ Findtrend  let you gathers all of your favorite website into one place.
     padding-top: 10px;
     padding-bottom: 10px;
     width: 300px;
+    height: 50px;
     display: flex;
     gap: 20px;
     rotate: 15deg;
