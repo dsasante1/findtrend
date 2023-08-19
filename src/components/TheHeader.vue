@@ -3,13 +3,19 @@
 <template>
 
     <div class="mobileView">
+
         <div id="navSection">
+
             <div id="mobileNav">
             
             <img alt="mobileGreenLogo" id="mobileGreenLogo" src="@/assets/green_logo.svg"/>
             <img alt="menu" id="menu" src="@/assets/twostrips.svg"/>  
 
             </div>
+
+            <div id="navItems">
+
+
             <p id="navTitle">Minimize your tabs.</p>
             <p id="navTitle">Find the trends!</p>
             <p id="navSubTitle">
@@ -19,10 +25,14 @@
                 Findtrend  let you gathers all of 
                 your favorite website into one place.
             </p>
-            <span id="getStarted">
+            <div id="getStarted">
                 <img alt="get-started" id="getStartedImage" src="@/assets/Get Started 🔥.svg"/>
-            </span>
+            </div>
+
+
             <div id="socialMedia">
+
+
         <span id="cardTwitter">
              <img alt="cardTwitter"  src="@/assets/image 96.png"/>
              <span id="socialMediaText">Cryptopunk - Search</span>
@@ -41,10 +51,6 @@
              <span id="socialMediaText">Product Design - Search</span>
              <img id="closeIcon"  src="@/assets/Group 1.svg"/>
         </span>
-        
-
-
-
 
         <span id="cardDribble">
              <img alt="cardDribble" id="cardDribbleImage"  src="@/assets/Rectangle 6.svg"/>
@@ -52,8 +58,8 @@
              <img id="closeIcon"  src="@/assets/Group 1.svg"/>
         </span>
 
-
-    </div>
+            </div>
+     </div>
         </div>
     </div>
 
@@ -146,6 +152,7 @@ Findtrend  let you gathers all of your favorite website into one place.
     padding: 20px;
     background-color: black;
     background-image: url('@/assets/Ornament.svg');
+
     /* background-repeat: no-repeat; */
 
 
@@ -163,6 +170,13 @@ Findtrend  let you gathers all of your favorite website into one place.
 #menu{
     width: 40px;
 }
+
+#navItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 #navTitle{
     font-weight: bolder;
@@ -182,8 +196,7 @@ Findtrend  let you gathers all of your favorite website into one place.
     background-color: greenyellow;
     padding: 10px;
     border-radius: 50px;
-    position: relative;
-    left: 100px;
+    width: fit-content;
 }
 
 
@@ -192,6 +205,8 @@ Findtrend  let you gathers all of your favorite website into one place.
     padding: 50px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
     
 }

@@ -1,5 +1,54 @@
 
-<script setup></script>
+<script setup>
+import {ref} from 'vue'
+
+import TheCardComponent from './TheCardComponent.vue'
+import TheGreenButton from './TheGreenButton.vue'
+import TheBlackButton from './TheBlackButton.vue'
+
+
+const cardOne = ref({
+    "title": "Personal",
+    "subtitle": "Special first packet for all",
+    "cost":"8",
+    "userOptions": [
+        "Up to 5 page each group",
+        "Up to 10 group page" ,
+        "5 Days group page saved",
+    ]
+})
+
+
+const cardTwo = ref({
+    "title": "Regular",
+    "subtitle": "Recommended for personal pro",
+    "cost":"20",
+    "userOptions": [
+        "Up to 15 page each group",
+        "Download page up to 20 page" ,
+        "Up to 10 group page",
+        "15 Days group page saved"
+    ]
+})
+
+
+
+const cardThree = ref({
+    "title": "Premium",
+    "subtitle": "Packet for Startup & Company",
+    "cost": "48",
+    "userOptions": [
+        "Unlimited group pages",
+        "Unlimited download page",
+        "Unlimited page each group",
+        "Custormized sorting group pages",
+        "Custormized group page name",
+        "30 Days group page saved",
+    ]
+})
+
+
+</script>
 
 
 <template>
@@ -7,7 +56,7 @@
     <div id="mobileView">
         <div class="cards">
         <p id="dealText">Get your best deal</p>
-    
+
         <div class="dealOptions">
             <span id="option">Monthly</span>
             <label class="switch">
@@ -15,7 +64,7 @@
             <span class="slider round"></span>
           </label>
             <span id="option">Yearly</span>
-            
+
         </div>
         <img alt="arrow" id="arrow" src="@/assets/Arrow 5.svg"/>
         <img alt="discount" id="discount" src="@/assets/discount.png"/>
@@ -45,11 +94,11 @@
                     </div>
 
                 </div>
-                
+
                 <div id="freeTrialPositionOne">
                     <span id="freeTrial">Start Free Trial</span>
                 </div>
-                
+
             </span>
 
             <span id="cardTwo">
@@ -81,12 +130,12 @@
                     </div>
 
                 </div>
-                
+
                 <div id="freeTrialPositionTwo">
                     <span id="freeTrialTwo">Start Free Trial</span>
                 </div>
             </span>
-            
+
             <span id="cardThree">
                 <h1>Premium</h1>
                 <h3>Packet for Startup & Company</h3>
@@ -124,7 +173,7 @@
                     </div>
 
                 </div>
-                
+
                 <div id="freeTrialPositionThree">
                     <span id="freeTrial">Start Free Trial</span>
                 </div>
@@ -138,7 +187,7 @@
 <div id="desktopView">
     <div class="cards">
         <p id="dealText">Get your best deal</p>
-    
+
         <div class="dealOptions">
             <span id="option">Monthly</span>
             <label class="switch">
@@ -146,14 +195,28 @@
             <span class="slider round"></span>
           </label>
             <span id="option">Yearly</span>
-            
+
             <img alt="arrow" id="arrow" src="@/assets/Arrow 5.svg"/>
             <img alt="discount" id="discount" src="@/assets/discount.png"/>
-    
+
         </div>
 
         <div id="optionCard">
-            <span id="cardOne">
+            
+            <TheCardComponent id="cardOne" :title=cardOne.title :subtitle=cardOne.subtitle :cost=cardOne.cost :userOptions=cardOne.userOptions />
+           
+          
+
+            <TheCardComponent id="cardTwo" :title=cardTwo.title :subtitle=cardTwo.subtitle :cost=cardTwo.cost :userOptions=cardTwo.userOptions />
+            
+
+            <TheCardComponent id="cardThree" :title=cardThree.title :subtitle=cardThree.subtitle :cost=cardThree.cost :userOptions=cardThree.userOptions />
+            
+
+        
+
+
+            <!-- <span id="cardOne">
                 <h1>Personal</h1>
                 <h3>Special first packet for all</h3>
                 <br>
@@ -177,11 +240,11 @@
                     </div>
 
                 </div>
-                
+
                 <div id="freeTrialPositionOne">
                     <span id="freeTrial">Start Free Trial</span>
                 </div>
-                
+
             </span>
 
             <span id="cardTwo">
@@ -213,12 +276,12 @@
                     </div>
 
                 </div>
-                
+
                 <div id="freeTrialPositionTwo">
                     <span id="freeTrialTwo">Start Free Trial</span>
                 </div>
             </span>
-            
+
             <span id="cardThree">
                 <h1>Premium</h1>
                 <h3>Packet for Startup & Company</h3>
@@ -256,12 +319,15 @@
                     </div>
 
                 </div>
-                
+
                 <div id="freeTrialPositionThree">
                     <span id="freeTrial">Start Free Trial</span>
                 </div>
-            </span>
+            </span> -->
         </div>
+        <TheGreenButton class="buttonPositionOne" buttonText='start free trial' />
+        <TheBlackButton class="buttonPositionTwo" buttonText='start free trial' />
+        <TheGreenButton class="buttonPositionThree" buttonText='start free trial' />
     </div>
 
 </div>
@@ -323,13 +389,13 @@
     height: 23px;
 
   }
-  
-  .switch input { 
+
+  .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-  
+
   .slider {
     position: absolute;
     cursor: pointer;
@@ -341,7 +407,7 @@
     -webkit-transition: .4s;
     transition: .4s;
   }
-  
+
   .slider:before {
     position: absolute;
     content: "";
@@ -353,26 +419,26 @@
     -webkit-transition: .4s;
     transition: .4s;
   }
-  
+
   input:checked + .slider {
     background-color: yellowgreen;
   }
-  
+
   input:focus + .slider {
     box-shadow: 0 0 1px yellowgreen;
   }
-  
+
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
-  
+
   /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
   }
-  
+
   .slider.round:before {
     border-radius: 50%;
   }
@@ -492,7 +558,7 @@
     display: None;
 }
 
-    
+
 .cards{
     background-color: black;
 }
@@ -534,13 +600,13 @@
     height: 23px;
 
   }
-  
-  .switch input { 
+
+  .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-  
+
   .slider {
     position: absolute;
     cursor: pointer;
@@ -552,7 +618,7 @@
     -webkit-transition: .4s;
     transition: .4s;
   }
-  
+
   .slider:before {
     position: absolute;
     content: "";
@@ -564,26 +630,26 @@
     -webkit-transition: .4s;
     transition: .4s;
   }
-  
+
   input:checked + .slider {
     background-color: white;
   }
-  
+
   input:focus + .slider {
     box-shadow: 0 0 1px yellowgreen;
   }
-  
+
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
-  
+
 
   .slider.round {
     border-radius: 34px;
   }
-  
+
   .slider.round:before {
     border-radius: 50%;
   }
@@ -612,7 +678,7 @@
     right: 110px;
     width: 90px;
     padding-bottom: 20px;
-    
+
 }
 
 
@@ -624,8 +690,7 @@
     width: 320px;
     height: 650px;
     background-color: white ;
-    border-radius: 5px;
-    padding: 20px;
+
 
 }
 
@@ -633,38 +698,39 @@
     width: 320px;
     height: 650px;
     background-color: yellowgreen;
-    border-radius: 5px;
-    padding: 20px;
+
 }
 
 #cardThree{
     width: 320px;
     height: 650px;
     background-color: white ;
-    border-radius: 5px;
-    padding: 20px;
+
 }
 
 
-#freeTrialPositionOne{
-    padding-top: 230px;
-    padding-right: 20px;
-    padding-left: 20px;
+.buttonPositionOne{
+    z-index: 1;
+    position: relative;
+    bottom:130px;
+    left: 200px;
 }
 
 
-#freeTrialPositionTwo{
-    padding-top: 170px;
-    padding-right: 20px;
-    padding-left: 20px;
+.buttonPositionTwo{
+    z-index: 1;
+    position: relative;
+    bottom:150px;
+    left: 550px;
 }
 
 
 
-#freeTrialPositionThree{
-    padding-top: 100px;
-    padding-right: 20px;
-    padding-left: 20px;
+.buttonPositionThree{
+    z-index: 1;
+    position: relative;
+    bottom:170px;
+    left: 900px;
 }
 
 
@@ -702,4 +768,3 @@
 
 
 </style>
-    
