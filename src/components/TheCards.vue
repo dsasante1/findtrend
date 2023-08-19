@@ -146,7 +146,9 @@
             <span class="slider round"></span>
           </label>
             <span id="option">Yearly</span>
-            <img alt="arrow" id="arrow" src="@/assets/Arrow 03.svg"/>
+            
+            <img alt="arrow" id="arrow" src="@/assets/Arrow 5.svg"/>
+            <img alt="discount" id="discount" src="@/assets/discount.png"/>
     
         </div>
 
@@ -546,7 +548,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: yellowgreen;
+    background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -558,13 +560,13 @@
     width: 20px;
     left: 4px;
     bottom: 2px;
-    background-color: white;
+    background-color: yellowgreen;
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: yellowgreen;
+    background-color: white;
   }
   
   input:focus + .slider {
@@ -594,6 +596,27 @@
     justify-content: center;
     padding: 50px;
   }
+
+
+
+  #arrow{
+    position: relative;
+    top: 40px;
+    right: 60px;
+  }
+
+
+#discount{
+    position: relative;
+    top: 90px;
+    right: 110px;
+    width: 90px;
+    padding-bottom: 20px;
+    
+}
+
+
+
 
 
 
