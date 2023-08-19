@@ -6,7 +6,9 @@
         <p id="trendingTopics">more trending topics</p>
         <div  id="joinNow"><span>Join Now</span></div>
     </div>
-    <div class="footerUrls">
+
+
+        <div class="footerUrls">
             <span>
                 <img alt="blackLogo" id="blackLogo" src="@/assets/Vector.svg"/>             
                 <span>Findtrend</span>
@@ -20,6 +22,7 @@
             </span>
     
             </div>
+    
 </template>
 
 
@@ -80,11 +83,14 @@
     
 }
 
+@media only screen and (min-width: 900px){
+
 .footerUrls{
     padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -92,6 +98,7 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
+    align-items: center;
  
 
 
@@ -100,6 +107,37 @@
 #footerNavUrls a{
     text-decoration : none;
     color: black;
+}
+
+}
+
+@media only screen and (max-width: 900px){
+
+    .footerUrls{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    align-items: center;
+}
+
+
+#footerNavUrls{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+ 
+
+
+}
+
+#footerNavUrls a{
+    text-decoration : none;
+    color: black;
+}
+
+
 }
 
 </style>

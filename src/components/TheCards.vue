@@ -135,7 +135,7 @@
 
 
 
-    <!-- <div id="desktopView">
+<div id="desktopView">
     <div class="cards">
         <p id="dealText">Get your best deal</p>
     
@@ -262,7 +262,7 @@
         </div>
     </div>
 
-</div> -->
+</div>
 
 
 </template>
@@ -484,7 +484,7 @@
 
 
 
-/* @media only screen and (min-width: 900px){
+@media only screen and (min-width: 900px){
 
 #mobileView{
     display: None;
@@ -676,7 +676,7 @@
 
 }
 
-*/
+
 
 </style>
     

@@ -298,6 +298,7 @@ Findtrend  let you gathers all of your favorite website into one place.
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 
