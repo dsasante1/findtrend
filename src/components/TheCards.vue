@@ -185,7 +185,9 @@ const cardThree = ref({
 
 
 <div id="desktopView">
+
     <div class="cards">
+
         <p id="dealText">Get your best deal</p>
 
         <div class="dealOptions">
@@ -204,16 +206,8 @@ const cardThree = ref({
         <div id="optionCard">
             
             <TheCardComponent id="cardOne" :title=cardOne.title :subtitle=cardOne.subtitle :cost=cardOne.cost :userOptions=cardOne.userOptions />
-           
-          
-
             <TheCardComponent id="cardTwo" :title=cardTwo.title :subtitle=cardTwo.subtitle :cost=cardTwo.cost :userOptions=cardTwo.userOptions />
-            
-
             <TheCardComponent id="cardThree" :title=cardThree.title :subtitle=cardThree.subtitle :cost=cardThree.cost :userOptions=cardThree.userOptions />
-            
-
-        
 
 
             <!-- <span id="cardOne">
@@ -325,9 +319,12 @@ const cardThree = ref({
                 </div>
             </span> -->
         </div>
-        <TheGreenButton class="buttonPositionOne" buttonText='start free trial' />
-        <TheBlackButton class="buttonPositionTwo" buttonText='start free trial' />
-        <TheGreenButton class="buttonPositionThree" buttonText='start free trial' />
+        
+        <span id="cardButtons">
+            <TheGreenButton  buttonText='start free trial' />
+            <TheBlackButton  buttonText='start free trial' />
+            <TheGreenButton  buttonText='start free trial' />
+        </span>
     </div>
 
 </div>
@@ -552,7 +549,7 @@ const cardThree = ref({
 
 
 
-@media only screen and (min-width: 900px){
+@media only screen and  (max-width: 1000px) and (min-width: 900px){
 
 #mobileView{
     display: None;
@@ -709,30 +706,19 @@ const cardThree = ref({
 }
 
 
-.buttonPositionOne{
+#cardButtons{
+    
     z-index: 1;
     position: relative;
-    bottom:130px;
-    left: 200px;
+    bottom: 90px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
 }
-
-
-.buttonPositionTwo{
-    z-index: 1;
-    position: relative;
-    bottom:150px;
-    left: 550px;
-}
-
-
-
-.buttonPositionThree{
-    z-index: 1;
-    position: relative;
-    bottom:170px;
-    left: 900px;
-}
-
 
 
 #freeTrial{
@@ -765,6 +751,203 @@ const cardThree = ref({
 
 }
 
+ 
+
+@media only screen and (min-width: 1000px){
+
+#mobileView{
+    display: None;
+}
+
+
+.cards{
+    background-color: black;
+}
+
+
+
+#dealText{
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+
+#option{
+    color:white;
+}
+
+.dealOptions{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 23px;
+
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2px;
+    background-color: yellowgreen;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: white;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px yellowgreen;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  #optionCard{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+  }
+
+
+
+  #arrow{
+    position: relative;
+    top: 40px;
+    right: 60px;
+  }
+
+
+#discount{
+    position: relative;
+    top: 90px;
+    right: 110px;
+    width: 90px;
+    padding-bottom: 20px;
+
+}
+
+
+
+#cardOne{
+    width: 320px;
+    height: 650px;
+    background-color: white ;
+
+
+}
+
+#cardTwo{
+    width: 320px;
+    height: 650px;
+    background-color: yellowgreen;
+
+}
+
+#cardThree{
+    width: 320px;
+    height: 650px;
+    background-color: white ;
+
+}
+
+
+#cardButtons{
+    
+    position: relative;
+    bottom: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+
+#freeTrial{
+    background-color: yellowgreen;
+    color: black;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left : 40px;
+    padding-right: 40px;
+    font-size: large;
+
+}
+
+#freeTrialTwo{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left : 40px;
+    padding-right: 40px;
+    font-size: large;
+
+}
+
+#cost{
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+
+}
 
 
 </style>

@@ -186,6 +186,8 @@
 
 <style scoped>
 
+/* mobile screens */
+
 @media only screen and (max-width: 900px){
 
 #desktopView{
@@ -309,6 +311,7 @@
     text-align: center;
     font-size: 30px;
     font-weight: bolder;
+    font-family: 'Roboto';
 }
 
 
@@ -391,7 +394,216 @@
 }
 
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 900px) and (max-width: 1000px){
+
+
+
+#desktopView{
+    display: None;
+}
+
+.midSection{
+    background-color: greenyellow;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+#newTab{
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+#centerContent{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#whiteBackgroud{
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+    
+   
+}
+
+#blackBackground{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+
+
+
+}
+
+
+#midLogo{
+    width: 30px;
+}
+
+
+
+#blackBackground span{
+    width: 200px;
+    
+}
+
+
+#closeIconImage{
+    width: 20px;
+}
+
+
+#topArrow{
+    width: 60px;
+    position: relative;
+    left: 490px;
+    top: 40px;
+}
+
+
+#bottomArrow{
+    width: 60px;
+    position: relative;
+    left: 300px;
+    bottom: 30px
+}
+
+
+#discoverTrend{
+    width: 140px;
+    position: relative;
+    left: 240px;
+    bottom: 40px;
+}
+
+#tabNow{
+    width: 140px;
+    position:relative;
+    left: 480px;
+    top: 60px;
+}
+
+#subText{
+    font-size: large;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right:10px;
+    text-align: center;
+    
+}
+
+
+.companies{
+    background-color: white;
+    padding: 50px;
+}
+
+#promotionText{
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+#greyText{
+    color: grey;
+}
+
+
+#tile{
+    color: #000000;
+    width: 400px;
+    height:auto;
+}
+
+#companyGrid{
+    display: grid;
+    grid-template-columns: 190px 190px;
+    grid-template-rows: 80px 80px 80px 80px;
+    grid-gap:5px;
+    align-items: center;
+  justify-content: center;
+}
+
+#companyGrid img{
+    width: 150px;
+    background-color: #f1f0f0;
+    border-radius: 8px;
+    padding: 20px;
+ 
+}
+
+#socialMediaLinks{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#socialMediaLinks img{
+    width: 45px;
+    height: auto;
+    background-color: #f1f0f0;
+    border-radius: 8px;
+    background-size: 50px;
+
+
+}
+
+#twitterImages img{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+#moreTrendButton{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#moreTrends{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left : 40px;
+    padding-right: 40px;
+    font-size: large;
+
+}
+
+
+}
+
+
+/* desktopscreens */
+
+@media only screen and (min-width: 1000px){
 
 #mobileView{
     display: none;

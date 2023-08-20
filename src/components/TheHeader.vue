@@ -84,22 +84,26 @@
         <span id="register">Register</span>
     </span>
 </div>
-<p id="minimizeText">
-    Minimize your tabs.
-    Find the trends!
-</p>
-<p id="subtitle">
-    Don’t let your computer memories consumes all of those browser tabs. 
-Findtrend  let you gathers all of your favorite website into one place.
 
-</p>
+<div id="navItems">
+
+    <p id="minimizeText">
+        Minimize your tabs.
+        Find the trends!
+    </p>
+
+    <p id="subtitle">
+        Don’t let your computer memories consumes all of those browser tabs. 
+    Findtrend  let you gathers all of your favorite website into one place.
+
+    </p>
     
         <img alt="flames" id="getStarted" src="@/assets/Get Started 🔥.svg"/> 
          <img alt="arrow" id="arrow" src="@/assets/Arrow 03.svg"/>
-    
-        <span id="researchHere">
-            <img alt="research start here" src="@/assets/All research start from here.svg"/>
-        </span>
+         <img alt="research start here" id="researchHere" src="@/assets/All research start from here.svg"/>
+       
+
+    </div>
     <div id="socialMedia">
         <span id="cardTwitter">
              <img alt="cardTwitter"  src="@/assets/image 96.png"/>
@@ -142,8 +146,10 @@ Findtrend  let you gathers all of your favorite website into one place.
 <style scoped>
 
 
+/* mobile screens */
 
 @media only screen and (max-width: 900px){
+
 .desktopView{
     display: None;
 }
@@ -196,7 +202,7 @@ Findtrend  let you gathers all of your favorite website into one place.
     background-color: greenyellow;
     padding: 10px;
     border-radius: 50px;
-    width: fit-content;
+
 }
 
 
@@ -234,7 +240,7 @@ Findtrend  let you gathers all of your favorite website into one place.
     display: flex;
     gap: 20px;
     rotate: -5deg;
-    /* padding: 20px; */
+
 }
 
 
@@ -248,7 +254,7 @@ Findtrend  let you gathers all of your favorite website into one place.
     display: flex;
     gap: 20px;
     rotate: -5deg;
-    /* padding: 20px; */
+
 }
 
 
@@ -262,7 +268,7 @@ Findtrend  let you gathers all of your favorite website into one place.
     display: flex;
     gap: 20px;
     rotate: 15deg;
-    /* padding: 20px; */
+
 }
 
 
@@ -281,20 +287,228 @@ Findtrend  let you gathers all of your favorite website into one place.
     display: flex;
     gap: 20px;
     rotate: 15deg;
-    /* padding: 20px; */
-}
-
-
-
-
-
-
 
 }
 
 
 
-@media only screen and (min-width: 900px){
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 900px) and (max-width: 1000px){
+
+
+.mobileView{
+    display: none;
+}
+
+.nav{
+    background-color: black;
+    padding: 30px;
+    background-image: url('@/assets/Ornament.svg');
+
+
+}
+
+#logoImageText{
+    display: flex;
+    align-items: center;
+}
+
+.navItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logoText{
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    padding-left: 20px;
+   
+    
+   
+}
+
+.navLinks{
+   
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    
+
+
+}
+
+
+.navLinks a{
+    color: white;
+    text-decoration : none;
+
+}
+
+
+
+#login{
+    color: white;
+    padding-right: 20px;
+}
+
+
+
+#register{
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left : 20px;
+    padding-right: 20px;
+    font-size: medium;
+}
+
+
+#navItems{
+    padding: 100px;
+    padding-bottom: 30px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#minimizeText{
+    color: white;    
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+
+#subtitle{
+    color: lightgray;
+    
+    font-weight: 400; 
+
+
+}
+
+
+
+#arrow{
+    position: relative;
+    bottom: 60px;
+    left: 120px;
+}
+
+#researchHere{
+    position: relative;
+    bottom: 170px;
+    left: 170px;
+
+}
+
+
+
+#getStarted{
+    background-color: greenyellow;
+    padding: 20px;
+    border-radius: 50px;
+ 
+
+}
+
+
+
+#socialMedia{
+    padding-top: 40px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+
+#socialMediaText{
+    color: white;
+}
+
+
+#cardTwitter{
+    background-color: #181818;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    gap: 20px;
+    rotate: -5deg;
+
+}
+
+
+#cardFb{
+    background-color: #181818;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    rotate: 15deg;
+
+}
+
+
+#cardPininterest{
+    background-color: #181818;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 302px;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    rotate: -5deg;
+
+}
+
+
+#cardDribble{
+    background-color: #181818;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    gap: 20px;
+    rotate: 15deg;
+
+}
+}
+
+
+
+/* dektop screen */
+
+@media only screen and (min-width: 1000px){
 
 
 .mobileView{
@@ -355,6 +569,8 @@ Findtrend  let you gathers all of your favorite website into one place.
     color: white;
     padding-right: 40px;
 }
+
+
 #register{
     background-color: white;
     color: black;
@@ -400,8 +616,8 @@ Findtrend  let you gathers all of your favorite website into one place.
 
 #researchHere{
     position: relative;
-    bottom: 2px;
-    left: 470px;
+    bottom: 10px;
+    left:470px;
 
 }
 
@@ -444,7 +660,7 @@ Findtrend  let you gathers all of your favorite website into one place.
     display: flex;
     gap: 20px;
     rotate: -5deg;
-    /* padding: 20px; */
+
 }
 
 
@@ -459,7 +675,7 @@ Findtrend  let you gathers all of your favorite website into one place.
     display: flex;
     gap: 10px;
     rotate: 15deg;
-    /* padding: 20px; */
+
 }
 
 
@@ -474,7 +690,7 @@ Findtrend  let you gathers all of your favorite website into one place.
     display: flex;
     gap: 10px;
     rotate: -5deg;
-    /* padding: 20px; */
+
 }
 
 
@@ -489,9 +705,10 @@ Findtrend  let you gathers all of your favorite website into one place.
     display: flex;
     gap: 20px;
     rotate: 15deg;
-    /* padding: 20px; */
+
 }
 }
+
 
 
 </style>
