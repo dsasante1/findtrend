@@ -17,12 +17,3 @@ import TheFooter from './components/TheFooter.vue'
 <style scoped>
 
 </style>
-
-<!-- 
-Inter
-Effra
-Roboto
-
-
-
--->

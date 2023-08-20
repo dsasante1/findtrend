@@ -159,7 +159,7 @@
     background-color: black;
     background-image: url('@/assets/Ornament.svg');
 
-    /* background-repeat: no-repeat; */
+    
 
 
 }
@@ -186,7 +186,7 @@
 
 #navTitle{
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 40px;
     color: white;
     text-align: center;
 }
@@ -519,7 +519,7 @@
     background-color: black;
     padding: 30px;
     background-image: url('@/assets/Ornament.svg');
-    /* background-repeat: no-repeat; */
+    
 
 }
 
