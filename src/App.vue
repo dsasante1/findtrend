@@ -1,7 +1,7 @@
 <script setup>
 import TheHeader from './components/TheHeader.vue'
 import TheMidSection from './components/TheMidSection.vue'
-import TheCards from './components/TheCards.vue'
+import TheSubscriptionSection from './components/SubscriptionSection.vue'
 import TheFooter from './components/TheFooter.vue'
 </script>
 
@@ -9,7 +9,7 @@ import TheFooter from './components/TheFooter.vue'
    
     <TheHeader />
     <TheMidSection />
-    <TheCards />
+    <TheSubscriptionSection />
     <TheFooter />
 
 </template>
